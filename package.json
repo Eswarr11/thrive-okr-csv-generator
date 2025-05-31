@@ -1,0 +1,36 @@
+{
+  "name": "thrive-okr-csv-generator",
+  "version": "1.0.0",
+  "description": "A Chrome extension that generates hierarchical OKR (Objectives and Key Results) data for ThriveSparrow in CSV format. Features AI-powered goal generation, employee assignment, and elegant Porsche-inspired UI design.",
+  "main": "popup.js",
+  "scripts": {
+    "build": "echo 'Building Chrome extension...' && echo 'No build process required for this extension'",
+    "package": "zip -r thrive-okr-csv-generator.zip . -x '*.git*' 'node_modules/*' '*.zip' 'package-lock.json'",
+    "lint": "echo 'Linting not configured yet'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "okr",
+    "objectives",
+    "key-results",
+    "thrivesparrow",
+    "csv",
+    "ai-powered",
+    "goal-generation",
+    "employee-management"
+  ],
+  "author": "Eswar A",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eswarr11/thrive-okr-csv-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eswarr11/thrive-okr-csv-generator/issues"
+  },
+  "homepage": "https://github.com/Eswarr11/thrive-okr-csv-generator#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

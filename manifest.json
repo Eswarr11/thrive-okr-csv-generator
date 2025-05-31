@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Goals Generator",
+  "version": "1.0",
+  "description": "Generate hierarchical goals and tasks data and export as CSV with a sleek modern UI",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./images/logo.png",
+      "48": "./images/logo.png",
+      "128": "./images/logo.png"
+    }
+  },
+  "icons": {
+    "16": "./images/logo.png",
+    "48": "./images/logo.png",
+    "128": "./images/logo.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 

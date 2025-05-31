@@ -1,0 +1,39 @@
+Employee ID,Name,Email,Job Title,Department,Is Dept Head,Manager Email
+E456,Nikihl Ponduri,eswar.a+123@surveysparrow.com,Engineering Manager,Engineering,,eswar.a+234@surveysparrow.com
+E324,Sakthi Prasath,eswar.a+456@surveysparrow.com,Associate Architect,Engineering,,eswar.a+123@surveysparrow.com
+E192,Bharathi Kannan,eswar.a+789@surveysparrow.com,Team Lead,Engineering,,eswar.a+123@surveysparrow.com
+E360,Balaji CM,eswar.a+234@surveysparrow.com,CTO,Engineering,Yes,eswar.a+111@surveysparrow.com
+E472,Arun Dev,eswar.a+567@surveysparrow.com,Director - Quality Engineering,Quality Engineering,Yes,eswar.a+111@surveysparrow.com
+E204,Sneha,eswar.a+891@surveysparrow.com,QA Automation Engineer,Engineering,,eswar.a+123@surveysparrow.com
+E336,Mahendra Malliboina,eswar.a+242@surveysparrow.com,QA Automation Engineer,Engineering,,eswar.a+123@surveysparrow.com
+E468,Eswar A,eswar.a+333@surveysparrow.com,QA - Intern,Engineering,,eswar.a+123@surveysparrow.com
+E600,Santhosh Kumar,eswar.a+444@surveysparrow.com,QA - Intern,Engineering,,eswar.a+123@surveysparrow.com
+E732,Harini,eswar.a+555@surveysparrow.com,QA - Intern,Engineering,,eswar.a+123@surveysparrow.com
+E864,Vignesh Vinod,eswar.a+666@surveysparrow.com,QA - Intern,Engineering,,eswar.a+123@surveysparrow.com
+E996,Kevin Jacob,eswar.a+777@surveysparrow.com,Team Lead,Engineering,,eswar.a+123@surveysparrow.com
+E128,Ram,eswar.a+888@surveysparrow.com,Team Lead,Engineering,,eswar.a+123@surveysparrow.com
+E260,Flavian Diol,eswar.a+999@surveysparrow.com,Product Developer,Engineering,,eswar.a+123@surveysparrow.com
+E392,Veroni Shewtha,eswar.a+112@surveysparrow.com,Product Developer,Engineering,,eswar.a+123@surveysparrow.com
+E524,Ayush Tripathy,eswar.a+223@surveysparrow.com,Product Developer,Engineering,,eswar.a+123@surveysparrow.com
+E656,Krishna Chaitanya Dutt,eswar.a+334@surveysparrow.com,Product Developer,Engineering,,eswar.a+123@surveysparrow.com
+E788,Manoj Jeyaraman,eswar.a+445@surveysparrow.com,Senior Accounts Producer,Design,,eswar.a+556@surveysparrow.com
+E920,Shammer,eswar.a+556@surveysparrow.com,QA Automation Engineer,Engineering,,eswar.a+123@surveysparrow.com
+E252,Shihab Muhammed,eswar.a+111@surveysparrow.com,CEO,,,
+E384,Ijaz Ahamad,eswar.a+222@surveysparrow.com,Associate Architect,Engineering,,eswar.a+234@surveysparrow.com
+E516,Anand,eswar.a+335@surveysparrow.com,Head of Design,Design,Yes,eswar.a+111@surveysparrow.com
+E648,Vipin Thomas,eswar.a+446@surveysparrow.com,Head of Sales,Sales,Yes,eswar.a+111@surveysparrow.com
+E780,Sharmila Banu,eswar.a+557@surveysparrow.com,Sales Executive,Sales,,eswar.a+446@surveysparrow.com
+E912,Niranjan,eswar.a+668@surveysparrow.com,DevOps - Intern,DevOps,,eswar.a+779@surveysparrow.com
+E1044,Aswin Kumar,eswar.a+779@surveysparrow.com,Senior DevOps Engineer,DevOps,Yes,eswar.a+123@surveysparrow.com
+E1176,Aldas Francis,eswar.a+890@surveysparrow.com,QA Automation Engineer,Quality Engineering,,eswar.a+992@surveysparrow.com
+E1308,Jiss George,eswar.a+992@surveysparrow.com,Staff Automation Engineer,Quality Engineering,,eswar.a+567@surveysparrow.com
+E1440,Arshad Riyas,eswar.a+1001@surveysparrow.com,Senior UI/UX Designer,Design,,eswar.a+335@surveysparrow.com
+E1572,Vaishnavi,eswar.a+1002@surveysparrow.com,Staff UI/UX Designer,Design,,eswar.a+335@surveysparrow.com
+E1704,Vishnu Chandru Babu,eswar.a+1003@surveysparrow.com,Lead QA Automation Engineer,Quality Engineering,,eswar.a+567@surveysparrow.com
+E1836,Sridhar,eswar.a+1004@surveysparrow.com,Lead Frontend Developer,Engineering,,eswar.a+123@surveysparrow.com
+E1968,Eugene,eswar.a+1005@surveysparrow.com,Senior Product Manager,Product,Yes,eswar.a+111@surveysparrow.com
+E2100,Aarohan,eswar.a+1006@surveysparrow.com,Associate Product Manager,Product,,eswar.a+1005@surveysparrow.com
+E2232,Saniya,eswar.a+1007@surveysparrow.com,Associate Product Manager,Product,,eswar.a+1005@surveysparrow.com
+E2364,Goal Admin,eswar.a+1008@surveysparrow.com,Goal Admin,Administration,,eswar.a+111@surveysparrow.com
+E2496,Admin,eswar.a+1009@surveysparrow.com,Admin,Administration,,eswar.a+111@surveysparrow.com
+E2628,Goal Writer,eswar.a+1010@surveysparrow.com,Goal Writer,Administration,,eswar.a+111@surveysparrow.com

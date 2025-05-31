@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Goals Generator</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-container">
+        <img src="./images/logo.png" alt="Goals Generator Logo" class="logo-image">
+      </div>
+      <h1>Goals Generator</h1>
+      <div class="subtitle">Create hierarchical goals and tasks for ThriveSparrow</div>
+    </div>
+    
+    <div class="info-box">
+      <span class="info-icon">ℹ️</span>
+      <div>
+        <strong>Important:</strong> This extension requires your ThriveSparrow app to have the same people directory as provided in the CSV file below.
+      </div>
+    </div>
+    
+    <button id="downloadPeopleDirectory" class="secondary-btn">
+      <span>📥</span>&nbsp;Download People Directory CSV
+    </button>
+    
+    <div class="divider"></div>
+    
+    <div class="form-group">
+      <label for="apiKey">OpenAI API Key (optional):</label>
+      <div class="api-key-container">
+        <input type="password" id="apiKey" placeholder="For AI-generated titles (leave empty for simple numbering)">
+        <button id="saveApiKey">Save</button>
+      </div>
+      <div class="api-key-info">
+        <span id="apiKeyStatus"></span>
+        <small>If provided, goal titles will be AI-generated with GPT-3.5. Otherwise, sequential titles will be used.</small>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="hierarchyDepth">Hierarchy Depth (1-4):</label>
+      <input type="number" id="hierarchyDepth" min="1" max="4" value="3">
+      <small>Organization → Department → Team → Individual</small>
+    </div>
+
+    <div class="form-group">
+      <label for="childGoals">Child Goals per Parent:</label>
+      <input type="number" id="childGoals" min="1" value="2">
+      <small>Number of sub-goals created under each parent goal</small>
+    </div>
+
+    <div class="form-group">
+      <label for="tasksPerGoal">Tasks per Goal:</label>
+      <input type="number" id="tasksPerGoal" min="0" value="2">
+      <small>Number of actionable tasks assigned to each goal</small>
+    </div>
+
+    <div class="form-group">
+      <label for="totalRows">Target Total Rows:</label>
+      <input type="number" id="totalRows" min="1" value="500">
+      <small>Approximate target for the CSV output size</small>
+    </div>
+
+    <button id="generate" class="primary-btn">
+      <span>✨</span> Generate CSV
+    </button>
+    
+    <div class="progress-container" id="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+      <div id="progress-text">0%</div>
+    </div>
+    
+    <div id="loader-overlay" class="loader-overlay">
+      <div class="loader-content">
+        <div class="spinner"></div>
+        <p>Generating CSV file...</p>
+      </div>
+    </div>
+    
+    <div id="status" class="status"></div>
+    
+    <div class="footer">
+      Goals Generator for ThriveSparrow • v1.0
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 
