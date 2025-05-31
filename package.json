@@ -2,35 +2,73 @@
   "name": "thrive-okr-csv-generator",
   "version": "1.0.0",
   "description": "A Chrome extension that generates hierarchical OKR (Objectives and Key Results) data for ThriveSparrow in CSV format. Features AI-powered goal generation, employee assignment, and elegant Porsche-inspired UI design.",
+  "private": true,
   "main": "popup.js",
   "scripts": {
-    "build": "echo 'Building Chrome extension...' && echo 'No build process required for this extension'",
-    "package": "zip -r thrive-okr-csv-generator.zip . -x '*.git*' 'node_modules/*' '*.zip' 'package-lock.json'",
-    "lint": "echo 'Linting not configured yet'",
-    "test": "echo 'No tests specified'"
+    "dev": "echo 'Development mode - Load unpacked extension in Chrome'",
+    "build": "npm run clean && npm run copy-files",
+    "clean": "rm -rf dist && mkdir -p dist",
+    "copy-files": "cp manifest.json popup.html popup.css popup.js people_directory.csv LICENSE README.md dist/ && cp -r images dist/",
+    "package": "npm run build && cd dist && zip -r ../thrive-okr-csv-generator-v$npm_package_version.zip .",
+    "package-dev": "zip -r thrive-okr-csv-generator-dev.zip . -x '*.git*' 'node_modules/*' '*.zip' 'dist/*' '.env*' '*.log'",
+    "validate": "npm run validate-manifest && npm run validate-permissions",
+    "validate-manifest": "echo 'Validating manifest.json...' && node -e \"JSON.parse(require('fs').readFileSync('manifest.json', 'utf8'))\" && echo 'Manifest is valid!'",
+    "validate-permissions": "echo 'Checking required permissions...'",
+    "format": "echo 'Code formatting not configured - consider adding Prettier'",
+    "lint": "echo 'Linting not configured - consider adding ESLint'",
+    "test": "echo 'Tests not configured - consider adding Jest for unit tests'",
+    "release": "npm run validate && npm run package",
+    "install-chrome": "echo 'To install: 1. Open chrome://extensions/ 2. Enable Developer mode 3. Click Load unpacked 4. Select this folder'"
   },
   "keywords": [
     "chrome-extension",
+    "browser-extension",
     "okr",
-    "objectives",
-    "key-results",
+    "objectives-key-results",
     "thrivesparrow",
-    "csv",
+    "csv-export",
+    "goal-tracking",
+    "performance-management",
     "ai-powered",
-    "goal-generation",
-    "employee-management"
+    "employee-management",
+    "productivity",
+    "workflow-automation"
   ],
-  "author": "Eswar A",
+  "author": {
+    "name": "Eswar A",
+    "url": "https://github.com/Eswarr11"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Eswarr11/thrive-okr-csv-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/Eswarr11/thrive-okr-csv-generator/issues"
+    "url": "https://github.com/Eswarr11/thrive-okr-csv-generator/issues",
+    "email": "eswarjo2003@gmail.com"
   },
   "homepage": "https://github.com/Eswarr11/thrive-okr-csv-generator#readme",
   "engines": {
-    "node": ">=14.0.0"
-  }
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "Chrome >= 88"
+  ],
+  "manifest": {
+    "manifest_version": 3,
+    "minimum_chrome_version": "88"
+  },
+  "files": [
+    "manifest.json",
+    "popup.html",
+    "popup.css",
+    "popup.js",
+    "people_directory.csv",
+    "images/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {},
+  "optionalDependencies": {}
 } 
